@@ -62,10 +62,18 @@ be seen using the `viewall` command.
 Persons can have any number of tags (including 0).
 ****
 
+ADDRESS follows a BLOCK, STREET, UNIT, POSTAL_CODE format where each item is separated by a comma and a
+space. Address is assumed to be a Singaporean address and hence follows the convention below:
+
+* BLOCK: positive integers, e.g. 60
+* STREET: alphanumeric characters and spaces, e.g. Lorong 6 Toa Payoh
+* UNIT: #<number>-<number>, e.g. #37-161
+* POSTAL_CODE: six-digit number, e.g. 128459
+
 Examples:
 
-* `add John Doe p/98765432 e/johnd@gmail.com a/John street, block 123, #01-01`
-* `add Betsy Crowe pp/1234567 e/betsycrowe@gmail.com pa/Newgate Prison t/criminal t/friend`
+* `add John Doe p/98765432 e/johnd@gmail.com a/123, John street, #01-01, 647583`
+* `add Betsy Crowe pp/1234567 e/betsycrowe@gmail.com pa/9, Newgate Way, #06-108, 164920 t/criminal t/friend`
 
 == Listing all persons : `list`
 

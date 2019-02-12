@@ -25,7 +25,8 @@ public class TypicalPersons {
             bill = new Person(new Name("Bill Clint"), new Phone("92229222", false), new Email("bc@gmail.com", false),
                     new Address("2, Clementi Road, #09-87, 654321", true), Collections.emptySet());
             candy = new Person(new Name("Candy Destiny"), new Phone("93339333", true),
-                    new Email("cd@gmail.com", false), new Address("3, Clementi Road, #10-92, 837465", true), Collections.emptySet());
+                    new Email("cd@gmail.com", false), new Address("3, Clementi Road, #10-92, 837465", true),
+                    Collections.emptySet());
             dan = new Person(new Name("Dan Smith"), new Phone("1234556", true), new Email("ss@tt.com", true),
                     new Address("26, College Avenue East, #17-209, 138597", true), Collections.singleton(new Tag("test")));
         } catch (IllegalValueException e) {
